@@ -18,7 +18,7 @@ def hello():
         append_write = 'w'
 
     file = open(fn, append_write)
-    file.write("Hostname: " + str(socket.gethostname()) + " Timestamp: " + str(time.time()) + "<br>")
+    file.write("Hostname: " + str(socket.gethostname()) + " Timestamp: " + str(time.time()) + " <br>")
     file.close()
 
     file = open(fn, 'r')
