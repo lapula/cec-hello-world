@@ -9,7 +9,7 @@ application = Flask(__name__)
 
 @application.route("/")
 def hello():
-    dir = "./mnt/"
+    dir = "/mnt/"
     fn = dir + "log.txt"
 
     if os.path.exists(fn):
